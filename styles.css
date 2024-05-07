@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+header {
+    background: rgb(36,115,180);
+background: linear-gradient(90deg, rgba(36,115,180,1) 0%, rgba(0,132,203,1) 50%, rgba(0,149,218,1) 100%);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+img{
+    height: 75px;
+    width: 180px;
+}
+
+h1,h2 {
+    margin: 5px;
+    padding-top: 50px;
+   text-align: center;
+   color: rgb(36,115,180);
+
+}
+
+
+main {
+    text-align: center;
+    margin-top: 50px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    background-color: rgba(0,149,218,1);
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #DB2930;
+}
+
+.troquel-info {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-right: 10px;
+    display: inline-block;
+}

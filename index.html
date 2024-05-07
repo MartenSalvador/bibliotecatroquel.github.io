@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca de Troqueles</title>
+    <link rel="stylesheet" href="styles.css">
+</head> 
+<body>
+    <header>
+        <img src="img/unnamed.jpg">
+    </header>
+    <div class="tituloPrincipal">
+        <h1>Biblioteca de Troqueles</h1>
+    </div>
+    <main>
+        <button id="buscarTroquel">Buscar Troquel</button>
+        <button id="agregarTroquel">Agregar Troquel Nuevo</button>
+        
+        <div id="searchSection" style="display: none;">
+            <h2>Buscar Troquel</h2>
+            <input type="text" id="searchInput" placeholder="Ingrese medidas de troquel">
+            <button id="searchButton">Buscar</button>
+            <div id="searchResult"></div>
+        </div>
+        
+        <div id="addSection" style="display: none;">
+            <h2>Agregar Troquel Nuevo</h2>
+            <label for="tipoTroquel">Tipo de Troquel:</label>
+            <select id="tipoTroquel">
+                <option value="rectangular">Rectangular</option>
+                <option value="trapecial">Trapecial</option>
+            </select>
+            <div id="rectangularFields" style="display: none;">
+                <input type="number" id="baseRectangular" placeholder="Base (mm)">
+                <input type="number" id="alturaRectangular" placeholder="Altura (mm)">
+            </div>
+            <div id="trapecialFields" style="display: none;">
+                <input type="number" id="baseMayorTrapecial" placeholder="Base Mayor (mm)">
+                <input type="number" id="baseMenorTrapecial" placeholder="Base Menor (mm)">
+                <input type="number" id="alturaTrapecial" placeholder="Altura (mm)">
+            </div>
+            <input type="text" id="troquelUso" placeholder="Uso de troquel">
+            <input type="text" id="troquelGuardado" placeholder="Ubicación donde se guarda el troquel">
+            <button id="guardarTroquel">Guardar Troquel</button>
+        </div>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>
+
